@@ -95,7 +95,7 @@ a {
 }
 
 .social a {
-	font-size: 0.85rem;
+	font-size: 1rem;
 	color: white;
 	margin: 0 0.25rem;
 	padding: 0.5em 0.75em;
@@ -153,5 +153,11 @@ a {
 @media (min-width: 30em) {
 	.card {
 		max-width: 22rem;
+	}
+}
+
+@media (min-width: 60em) {
+	.social a {
+		font-size: 0.8rem;
 	}
 }
