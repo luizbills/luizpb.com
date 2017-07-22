@@ -13,7 +13,6 @@ body.home {
 	background-image: -webkit-linear-gradient(bottom, rgba(251, 194, 235, 0.6) 0%, rgba(166, 193, 238, 0.6) 100%), url('../images/code-screen.jpg');
 	background-image: -o-linear-gradient(bottom, rgba(251, 194, 235, 0.6) 0%, rgba(166, 193, 238, 0.6) 100%), url('../images/code-screen.jpg');
 	background-image: linear-gradient(to top, rgba(251, 194, 235, 0.6) 0%, rgba(166, 193, 238, 0.6) 100%), url('../images/code-screen.jpg');
-	background-ata: center;
 	background-size: cover;
 	background-attachment: fixed;
 }
