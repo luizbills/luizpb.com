@@ -42,8 +42,8 @@ a {
 
 .avatar img {
 	display: block;
-	width: 8rem;
-	height: 8rem;
+	width: 6rem;
+	height: 6rem;
 	margin: 0 auto;
 }
 
@@ -63,6 +63,7 @@ a {
 
 .links a {
 	color: #2a7fff;
+	vertical-align: middle;
 	padding: 0.75rem 0;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
