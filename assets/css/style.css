@@ -61,14 +61,16 @@ a {
 }
 
 .links a {
-	color: #2a7fff;
+	color: #7d7d7d;
 	vertical-align: middle;
 	padding: 0.75rem 0;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
+	transition: all 0.4s;
 }
 
 .links a:hover {
+	color: #2a7fff;
 	font-weight: bold;
 }
 
@@ -80,11 +82,12 @@ a {
 	position: relative;
 	top: 0.5rem;
 	margin: 0 auto;
-	background-color: #2a7fff;
+	background-color: #7d7d7d;
 	transition: all 0.4s;
 }
 
 .links a:hover:after {
+	background-color: #2a7fff;
 	width: 25%;
 }
 
