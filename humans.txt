@@ -1,0 +1,15 @@
+/* TEAM */
+
+Developer: Luiz Paulo Bills
+Email: luizpbills@gmail.com
+Location: Brazil
+
+/* THANKS */
+
+IcoMoon: https://icomoon.io/
+netlify: https://www.netlify.com/
+
+/* SITE */
+
+Components: minireset.css, Microtip
+License: GPL-3.0
