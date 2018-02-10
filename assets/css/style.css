@@ -23,7 +23,11 @@ body.home {
 
 a {
 	color: inherit;
-	text-decoration: none;
+}
+
+.screen-reader-text {
+    position: absolute !important;
+    left: -999em;
 }
 
 .wrapper {
@@ -58,9 +62,22 @@ a {
 	font-size: 2rem;
 }
 
+.name,
+.bio {
+	margin-top: .75rem;
+}
+
+.email {
+	letter-spacing: 0.1em;
+	font-size: .9rem;
+	opacity: .8;
+	font-weight: bold;
+}
+
 .links {
 	display: flex;
 	flex-direction: column;
+	margin-top: 1rem;
 }
 
 .links a {
@@ -70,6 +87,7 @@ a {
 	text-transform: uppercase;
 	letter-spacing: .1rem;
 	transition: all .4s;
+	text-decoration: none;
 }
 
 .links a:hover {
@@ -98,6 +116,7 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin-top: 1rem;
 }
 
 .social a {
@@ -108,6 +127,7 @@ a {
 	border-radius: .25rem;
 	opacity: .8;
 	transition: opacity .4s;
+	text-decoration: none;
 }
 
 .social a:focus,
@@ -131,33 +151,16 @@ a {
 	background-color: #0b7eff;
 }
 
-.email {
-	background-color: #F5AB35;
-}
-
-.email .icon {
-	position: relative;
-	top: -1px;
-}
-
-.copyright {
+.footer {
 	font-size: .75rem;
 	text-transform: uppercase;
 	margin-top: 2rem;
 	opacity: .5;
 }
 
-.copyright a {
-	text-decoration: underline;
-}
-
-.name,
-.bio {
-	margin-top: .75rem;
-}
-
-.social {
-	margin-top: 2rem;
+.bg-copyright {
+	font-size: .65rem;
+	padding: .5rem;
 }
 
 .lang {
@@ -166,7 +169,7 @@ a {
 }
 
 .lang a {
-	padding: .5rem .5rem;
+	padding: .5rem;
 }
 
 @media (min-width: 30em) {
