@@ -1,7 +1,7 @@
 /* TEAM */
 
-Developer: Luiz Paulo Bills
-Email: luizpbills@gmail.com
+Developer: Luiz Bills
+Email: luizbills@pm.me
 Location: Brazil
 
 /* THANKS */
