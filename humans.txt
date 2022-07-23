@@ -8,8 +8,9 @@ Location: Brazil
 
 IcoMoon: https://icomoon.io/
 netlify: https://www.netlify.com/
+Heroicons: https://heroicons.com/
+ClipboardJS: https://clipboardjs.com/
 
 /* SITE */
 
-Components: minireset.css, Microtip
 License: GPL-3.0
