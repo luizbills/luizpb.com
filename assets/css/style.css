@@ -267,7 +267,6 @@ th {
 }
 .icon {
   font-family: "icomoon" !important;
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -292,23 +291,9 @@ th {
 html,
 body {
   height: 100%;
-}
-
-body.home {
+  color: #343a40;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  background-image: -webkit-linear-gradient(
-      bottom,
-      rgba(251, 194, 235, 0.6) 0%,
-      rgba(166, 193, 238, 0.6) 100%
-    ),
-    url("../images/code-screen.jpg");
-  background-image: -o-linear-gradient(
-      bottom,
-      rgba(251, 194, 235, 0.6) 0%,
-      rgba(166, 193, 238, 0.6) 100%
-    ),
-    url("../images/code-screen.jpg");
   background-image: linear-gradient(
       to top,
       rgba(251, 194, 235, 0.6) 0%,
@@ -321,6 +306,7 @@ body.home {
 
 a {
   color: inherit;
+  transition: color 200ms;
 }
 
 svg {
@@ -349,33 +335,29 @@ svg {
   background-color: #fff;
 }
 
-.avatar img {
-  display: block;
-  width: 6rem;
-  height: 6rem;
-  margin: 0 auto;
-}
-
 .about {
-  color: #555;
   line-height: 1.4;
 }
 
 .name {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 p,
-.name,
-.bio {
+.name {
   margin-top: 0.75rem;
 }
 
+.bio {
+  font-style: italic;
+}
+
 .email {
-  letter-spacing: 0.1em;
-  font-size: 0.9rem;
+  letter-spacing: 0.05em;
   opacity: 0.8;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .payment-buttons,
@@ -387,19 +369,22 @@ p,
 }
 
 .links a {
-  color: #7d7d7d;
+  color: #6f6f6f;
+  font-weight: bold;
   vertical-align: middle;
   padding: 0.75rem 0;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.1em;
   transition: all 0.4s;
   text-decoration: none;
   width: 100%;
 }
 
-.links a:hover {
+.email:hover,
+.email:focus,
+.links a:hover,
+.links a:focus {
   color: #2a7fff;
-  font-weight: bold;
 }
 
 .links a:after {
@@ -428,7 +413,7 @@ p,
   margin-bottom: 1rem;
   font-weight: bold;
   font-size: 1.2rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.1em;
   max-width: 80%;
   width: 100%;
   transition: transform 250ms;
@@ -450,6 +435,55 @@ p,
 
 .payment-buttons a#kofi {
   background-color: #ff5f5f;
+}
+
+.payment-buttons a#pix {
+  background-color: #30b6a8;
+}
+
+.payment-buttons .tip {
+  font-size: 90%;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.pix-qrcode {
+  width: 16rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0.75rem;
+  border: 3px dashed #868e96;
+}
+
+.pix-qrcode img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.pix-key {
+  width: 100%;
+  text-align: center;
+  font-family: monospace;
+  font-size: 12px;
+  padding: 1em;
+  background-color: #e9ecef;
+  border: 0;
+  letter-spacing: 0.05em;
+}
+
+.pix-copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #2a7fff;
+  margin-top: 0.5rem;
+  padding: 0.5em;
+  background-color: #f0f9ff;
+}
+
+.pix-copy svg {
+  margin-right: 0.25rem;
 }
 
 .social {
@@ -496,7 +530,7 @@ p,
   font-size: 0.75rem;
   text-transform: uppercase;
   margin-top: 2rem;
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 .bg-copyright {
