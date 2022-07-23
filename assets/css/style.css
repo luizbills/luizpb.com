@@ -414,7 +414,7 @@ p,
   font-weight: bold;
   font-size: 1.2rem;
   letter-spacing: 0.1em;
-  max-width: 80%;
+  max-width: 90%;
   width: 100%;
   transition: transform 250ms;
 }
@@ -433,8 +433,8 @@ p,
   background-color: #2790c3;
 }
 
-.payment-buttons a#kofi {
-  background-color: #ff5f5f;
+.payment-buttons a#ghsponsors {
+  background-color: #161b22;
 }
 
 .payment-buttons a#pix {
