@@ -323,6 +323,11 @@ a {
   color: inherit;
 }
 
+svg {
+  width: 1em;
+  height: 1em;
+}
+
 .screen-reader-text {
   position: absolute !important;
   left: -999em;
@@ -426,6 +431,10 @@ p,
   letter-spacing: 1px;
   max-width: 80%;
   width: 100%;
+}
+
+.payment-buttons svg {
+  transform: translateY(3px);
 }
 
 .payment-buttons a#paypal {
