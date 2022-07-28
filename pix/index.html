@@ -60,15 +60,15 @@
 
           <h1 class="name">Faça sua doação com Pix</h1>
 
-          <p>
-            Abra o app do seu banco e escaneie a imagem do QR Code:
-          </p>
+          <p>Abra o app do seu banco e escaneie a imagem do QR Code:</p>
 
           <p class="pix-qrcode">
             <img src="/assets/images/qrcode-pix.png" alt="QR Code do PIX" />
           </p>
 
-          <p>Ou faça uma transferência usando a minha <strong>Chave Pix</strong>:</p>
+          <p>
+            Ou faça uma transferência usando a minha <strong>Chave Pix</strong>:
+          </p>
           <p>
             <input
               type="text"
@@ -135,6 +135,8 @@
       const btn = document.querySelector(".pix-copy");
       const btnText = btn.querySelector("span");
       const clipboard = new ClipboardJS(btn);
+      const key = document.querySelector(".pix-key");
+      key && key.addEventListener("click", () => btn.click());
       clipboard.on("success", function (evt) {
         evt.clearSelection();
         if (!btnText.dataset.oldText) {
